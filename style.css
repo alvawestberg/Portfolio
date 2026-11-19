@@ -399,3 +399,129 @@ body:has(main .timeline-item) > footer p {
         gap: 35px;
     }
 }
+
+
+/* CAREER – VINRÖD INLEDNING */
+
+.career-intro {
+    padding: 105px 8% 100px;
+    background-color: #5B0D1E;
+    color: #F8F5F0;
+}
+
+.career-intro__label {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.career-intro__title {
+    margin: 28px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(54px, 9vw, 125px);
+    font-weight: normal;
+    letter-spacing: -4px;
+    line-height: 1;
+}
+
+.career-intro__description {
+    max-width: 420px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* CAREER – MY VISION */
+
+.career-vision {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 45px;
+    padding: 90px 8%;
+    background-color: #F8F5F0;
+}
+
+.career-vision__label,
+.career-goal__number {
+    margin: 0;
+    color: #5B0D1E;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.career-vision__title,
+.career-goals__heading {
+    margin: 18px 0 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #5B0D1E;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: normal;
+}
+
+.career-vision__text,
+.career-goal__text {
+    max-width: 430px;
+    color: #55504D;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.career-vision__image {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    background-color: #D8CEC5;
+}
+
+/* CAREER – MY FUTURE GOALS */
+
+.career-goals {
+    padding: 90px 8%;
+    background-color: #EFE9E2;
+}
+
+.career-goals__heading {
+    margin: 0 0 40px;
+}
+
+.career-goals__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 45px;
+}
+
+.career-goal__title {
+    margin: 12px 0;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* CAREER – MOBIL */
+
+@media (max-width: 700px) {
+    .career-intro {
+        padding: 75px 6%;
+    }
+
+    .career-intro__title {
+        letter-spacing: -2px;
+    }
+
+    .career-vision,
+    .career-goals {
+        padding: 65px 6%;
+    }
+
+    .career-vision,
+    .career-goals__grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .career-vision__image {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+}
