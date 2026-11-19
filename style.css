@@ -271,3 +271,21 @@ a {
         max-width: 180px;
     }
 }
+
+/* KOMPETENSER */
+
+.competencies-page .skills__intro {
+    max-width: 560px;
+    margin: 0;
+}
+
+.competencies-page .project-card__title {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .competencies-page .intro__title {
+        font-size: clamp(32px, 9vw, 54px);
+        letter-spacing: -1px;
+    }
+}
