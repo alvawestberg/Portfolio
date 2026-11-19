@@ -204,159 +204,70 @@ a {
     }
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Explore Johanna Andersson's career goals, future education and ambitions in web development.">
+/* OM MIG */
 
-    <title>Career Goals | Johanna Andersson</title>
+.about {
+    padding: 90px 8%;
+    background-color: #F8F5F0;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+.about__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    align-items: start;
+    gap: 45px;
+    max-width: 900px;
+}
 
-<body>
+.about__title {
+    margin: 0 0 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #5B0D1E;
+    color: #5B0D1E;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: normal;
+}
 
-    <header class="header">
-        <a class="header__logo" href="index.html">JA.</a>
+.about__lead {
+    margin: 0 0 16px;
+    font-size: 18px;
+    line-height: 1.6;
+}
 
-        <nav class="header__nav" aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="om-mig.html">About Me</a>
-            <a href="kompetenser.html">Skills</a>
-            <a href="projekt.html">Projects</a>
-            <a href="utbildning.html">Education</a>
-            <a href="karriarmal.html" aria-current="page">Career Goals</a>
-            <a href="kontakt.html">Contact</a>
-        </nav>
-    </header>
+.about__text {
+    max-width: 520px;
+    margin: 0 0 16px;
+    color: #55504D;
+    font-size: 15px;
+    line-height: 1.8;
+}
 
-    <main>
+.about__image {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #D8CEC5;
+}
 
-        <!-- INTRODUCTION -->
-        <section class="career-intro">
-            <p class="career-intro__label">
-                MY FUTURE / MY AMBITIONS
-            </p>
+/* OM MIG PÅ MOBIL */
 
-            <h1 class="career-intro__title">
-                Career Goals.
-            </h1>
+@media (max-width: 700px) {
+    .about {
+        padding: 65px 6%;
+    }
 
-            <p class="career-intro__description">
-                Driven by creativity, technology and
-                a passion for continuous growth.
-            </p>
-        </section>
+    .about__layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 
-        <!-- MY VISION -->
-        <section class="career-vision">
-
-            <p class="career-vision__label">
-                01 / MY VISION
-            </p>
-
-            <h2 class="career-vision__title">
-                Designing the future.
-            </h2>
-
-            <p class="career-vision__text">
-                My ambition is to continue developing
-                my skills in web development and create
-                meaningful digital experiences that
-                combine creativity and technology.
-            </p>
-
-        </section>
-
-        <!-- MY FUTURE GOALS -->
-        <section class="career-goals">
-
-            <h2 class="career-goals__heading">
-                My Future Goals
-            </h2>
-
-            <div class="career-goals__grid">
-
-                <article class="career-goal">
-                    <p class="career-goal__number">
-                        02 / EDUCATION
-                    </p>
-
-                    <h3 class="career-goal__title">
-                        Master's Degree
-                    </h3>
-
-                    <p class="career-goal__text">
-                        I plan to pursue a master's degree
-                        in web design and development to
-                        deepen my technical and creative skills.
-                    </p>
-                </article>
-
-                <article class="career-goal">
-                    <p class="career-goal__number">
-                        03 / CAREER
-                    </p>
-
-                    <h3 class="career-goal__title">
-                        Full-Stack Developer
-                    </h3>
-
-                    <p class="career-goal__text">
-                        My goal is to work with both frontend
-                        and backend development, creating
-                        functional and user-friendly
-                        digital solutions.
-                    </p>
-                </article>
-
-                <article class="career-goal">
-                    <p class="career-goal__number">
-                        04 / GROWTH
-                    </p>
-
-                    <h3 class="career-goal__title">
-                        Continuous Learning
-                    </h3>
-
-                    <p class="career-goal__text">
-                        I want to keep exploring new
-                        technologies, expanding my knowledge
-                        and growing as a developer.
-                    </p>
-                </article>
-
-                <article class="career-goal">
-                    <p class="career-goal__number">
-                        05 / FUTURE
-                    </p>
-
-                    <h3 class="career-goal__title">
-                        International Opportunities
-                    </h3>
-
-                    <p class="career-goal__text">
-                        In the future, I hope to work
-                        internationally, collaborate with
-                        diverse teams and gain new
-                        perspectives.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>Johanna Andersson</p>
-        <p>© 2026 / Portfolio</p>
-    </footer>
-
-</body>
-</html>
+    .about__image {
+        max-width: 180px;
+    }
+}
