@@ -1,78 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Johanna Andersson studies information systems at Dalarna University and aims to become a full-stack developer.">
-  <title>About Me – Johanna Andersson</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Johanna Andersson studies information systems at Dalarna University and aims to become a full-stack developer.">
+    <title>About Me – Johanna Andersson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="header__nav" aria-label="Huvudmeny">
-            <a href="index.html">Home page</a>
-            <a href="om-mig.html">About me</a>
+    <header class="header">
+        <a class="header__logo" href="index.html" aria-label="Johanna Andersson, home">JA.</a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+            <a href="index.html">Home Page</a>
+            <a href="om-mig.html" aria-current="page">About Me</a>
             <a href="kompetenser.html">Competencies</a>
-            <a href="projekt.html" aria-current="page"> My project</a>
-            <a href="utbildning.html">Education&Experience</a>
-            <a href="karriarmal.html">Career</a>
+            <a href="projekt.html">My Projects</a>
+            <a href="utbildning.html">Education &amp; Experience</a>
+            <a href="karriarmal.html">Career Goals</a>
             <a href="kontakt.html">Contact</a>
         </nav>
-  </header>
+    </header>
 
-  <main class="about">
-    <h1 class="about__title">About Me</h1>
+    <main>
+        <section class="intro">
+            <p class="intro__label">PORTFOLIO / 2026</p>
+            <h1 class="intro__title">About Me</h1>
+        </section>
 
-    <div class="about__intro">
-      <div class="about__presentation">
-        <p>
-          My name is Johanna Andersson. I am 25 years old and from Borlänge.
-          I am in my final year of the Information Systems programme at
-          Dalarna University and expect to graduate in 2027. Alongside my
-          studies, I work part-time in IT systems administration, where I
-          support users and troubleshoot technical issues.
-        </p>
-        <p>
-          I enjoy collaborating with others and exploring different ways
-          to solve problems. I am particularly drawn to the creative side
-          of web development because it allows me to work with both design
-          and functionality. Outside of work and university, I enjoy
-          exercising, travelling and spending time with family and friends.
-        </p>
-      </div>
+        <section class="projects">
+            <div class="section-heading">
+                <h2>Johanna Andersson</h2>
+            </div>
 
-      <figure class="about__portrait">
-        <img class="about__image" src="images/johanna.jpg" alt="Portrait of Johanna Andersson">
-        <figcaption class="about__caption">
-          Johanna Andersson, Information Systems student at Dalarna University.
-        </figcaption>
-      </figure>
-    </div>
+            <div class="about-profile">
+                <div class="project-card__description">
+                    <p>
+                        My name is Johanna Andersson. I am 25 years old and from Borlänge.
+                        I am in my final year of the Information Systems programme at
+                        Dalarna University and expect to graduate in 2027. Alongside my
+                        studies, I work part-time in IT systems administration, where I
+                        support users and troubleshoot technical issues.
+                    </p>
+                    <p>
+                        I enjoy collaborating with others and exploring different ways
+                        to solve problems. I am particularly drawn to the creative side
+                        of web development because it allows me to work with both design
+                        and functionality. Outside of work and university, I enjoy
+                        exercising, travelling and spending time with family and friends.
+                    </p>
+                </div>
 
-    <section class="about__section">
-      <h2 class="about__heading">My Interest in Web Development</h2>
-      <p>
-        I became interested in programming when I built my first web page
-        during my studies. The project made me think about how technical
-        decisions affect how easy a website is to use. Since then, I have
-        wanted to learn more about website design and how the features
-        that people use are built.
-      </p>
-    </section>
+                <figure style="margin: 0; max-width: 120px;">
+                    <img
+                        class="about-profile__portrait"
+                        src="images/johanna.jpg"
+                        alt="Portrait of Johanna Andersson"
+                        width="120"
+                        height="150"
+                        style="display: block; max-width: 100%; object-fit: cover; object-position: center top;"
+                    >
+                    <figcaption class="project-card__description">
+                        Johanna Andersson, Information Systems student at Dalarna University.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <section class="about__section">
-      <h2 class="about__heading">After Graduation</h2>
-      <p>
-        After graduation, I plan to work in web development and build on
-        my skills in both front-end and back-end development. I am also
-        exploring master's programmes in web design or web development.
-        My long-term goal is to work as a full-stack developer, ideally
-        in an international setting.
-      </p>
-      <p><a href="karriarmal.html">Read more about my career goals</a></p>
-    </section>
-  </main>
+        <section class="projects projects--research">
+            <div class="section-heading">
+                <h2>My Interest in Web Development</h2>
+            </div>
 
+            <p class="project-card__description">
+                I became interested in programming when I built my first web page
+                during my studies. The project made me think about how technical
+                decisions affect how easy a website is to use. Since then, I have
+                wanted to learn more about website design and how the features
+                that people use are built.
+            </p>
+        </section>
 
+        <section class="projects">
+            <div class="section-heading">
+                <h2>After Graduation</h2>
+            </div>
+
+            <p class="project-card__description">
+                After graduation, I plan to work in web development and build on
+                my skills in both front-end and back-end development. I am also
+                exploring master's programmes in web design or web development.
+                My long-term goal is to work as a full-stack developer, ideally
+                in an international setting.
+            </p>
+
+            <p class="project-card__description">
+                <a href="karriarmal.html" style="text-decoration: underline;">
+                    Read more about my career goals
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>Johanna Andersson</span>
+    </footer>
 </body>
 </html>
