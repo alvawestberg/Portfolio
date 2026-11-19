@@ -289,3 +289,113 @@ a {
         letter-spacing: -1px;
     }
 }
+
+/* EDUCATION & EXPERIENCE */
+
+body:has(main .timeline-item) main > section {
+    padding: 90px 8%;
+    background-color: #F8F5F0;
+}
+
+body:has(main .timeline-item) main > section:first-child {
+    padding-top: 0;
+}
+
+/* Vinröd topp med samma mått som About Me */
+body:has(main .timeline-item) main > section:first-child > h2 {
+    margin: 0 -9.52381% 40px;
+    padding: 105px 9.52381% 128px;
+    background-color: #5B0D1E;
+    color: #F8F5F0;
+    font-family: Georgia, serif;
+    font-size: clamp(54px, 9vw, 125px);
+    font-weight: normal;
+    letter-spacing: -4px;
+    line-height: 1;
+}
+
+body:has(main .timeline-item) main > section:first-child > h2::before {
+    content: "PORTFOLIO / 2026";
+    display: block;
+    margin: 12px 0 28px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: normal;
+}
+
+/* Erfarenheter i samma rutnät som projekten */
+body:has(main .timeline-item) main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 45px;
+    background-color: #EFE9E2;
+}
+
+body:has(main .timeline-item) main > section:nth-child(2) > h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #5B0D1E;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: normal;
+}
+
+body:has(main .timeline-item) main h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+body:has(main .timeline-item) main time {
+    color: #5B0D1E;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+body:has(main .timeline-item) main p {
+    max-width: 430px;
+    margin: 12px 0 0;
+    color: #55504D;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Den tomma article-taggen i utbildningsdelen */
+body:has(main .timeline-item) main .timeline-item:empty {
+    display: none;
+}
+
+body:has(main .timeline-item) > footer {
+    padding: 35px 8%;
+    background-color: #5B0D1E;
+    color: #F8F5F0;
+    font-size: 12px;
+}
+
+body:has(main .timeline-item) > footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    body:has(main .timeline-item) main > section {
+        padding: 65px 6%;
+    }
+
+    body:has(main .timeline-item) main > section:first-child {
+        padding-top: 0;
+    }
+
+    body:has(main .timeline-item) main > section:first-child > h2 {
+        margin-inline: -6.81818%;
+        padding: 75px 6.81818% 103px;
+        letter-spacing: -2px;
+    }
+
+    body:has(main .timeline-item) main > section:nth-child(2) {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
