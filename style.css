@@ -743,13 +743,15 @@ a {
 
 @media (min-width: 901px) {
     .home-hero__title {
-        transform: translateX(100px);
+        transform: translateX(0px);
     }
 }
-.contact-page .contact_form {}
-     max-width: 600px;
-     margin: 0 auto;
+.contact-page .contact_form {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+<<<<<<< HEAD
  contact-page .contact_form label {
      display: block;
      margin-bottom: 10px;
@@ -1025,5 +1027,18 @@ body:has(main .timeline-item)
     body:has(main .timeline-item) > footer {
         flex-direction: column;
         padding: 35px 6%;
+=======
+.contact-page .contact_form label {
+    display: block;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+ @media (min-width: 901px) {
+    .home-hero__title {
+        transform: none;
+        font-size: clamp(42px, 7.5vw, 125px);
+        letter-spacing: -4px;
+>>>>>>> f81e8db2ad26bf65da14a00c94260b2d600750dc
     }
 }
