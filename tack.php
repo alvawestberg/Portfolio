@@ -21,6 +21,15 @@ $message = $_POST["message"] ?? "";
 
     <header class="header">
         <a class="header__logo" href="index.html">JA.</a>
+        <nav class="header__nav" aria-label="Huvudmeny">
+            <a href="index.html">Home page</a>
+            <a href="om-mig.html" aria-current="page">About me</a>
+            <a href="kompetenser.html">Competencies</a>
+            <a href="projekt.html">My projects</a>
+            <a href="utbildning.html">Education & Experience</a>
+            <a href="karriarmal.html">Career</a>
+            <a href="kontakt.html">Contact</a>
+        </nav>
     </header>
 
     <main class="contact">
