@@ -951,3 +951,101 @@ body:has(main .timeline-item) > footer p {
     object-position: center;
     border-radius: 8px;
 }
+
+/* ===== CONTACT PAGE ===== */
+
+.contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 90px 8%;
+}
+
+.contact__title {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: normal;
+    color: #5B0D1E;
+    margin: 0 0 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #5B0D1E;
+}
+
+.contact__description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #55504D;
+    margin-bottom: 35px;
+}
+
+.contact__form {
+    max-width: 650px;
+    padding: 40px;
+    background-color: #EFE9E2;
+}
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.contact__field label {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5B0D1E;
+}
+
+.contact__field input,
+.contact__field select,
+.contact__field textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #D8CEC5;
+    background-color: #F8F5F0;
+    color: #1D1B1B;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact__field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact__field input:focus,
+.contact__field select:focus,
+.contact__field textarea:focus {
+    outline: 2px solid #5B0D1E;
+    outline-offset: 2px;
+}
+
+.contact__button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background-color: #5B0D1E;
+    color: #F8F5F0;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact__button:hover {
+    background-color: #7A2438;
+}
+
+/* CONTACT MOBILE */
+
+@media (max-width: 700px) {
+    .contact {
+        padding: 60px 6%;
+    }
+
+    .contact__form {
+        padding: 25px;
+    }
+}
