@@ -1,21 +1,83 @@
-<form action="tack.php" method="post" > 
-    <input type="text" name="name" placeholder="Your Name" >
-    <input type="email" name="email" placeholder="Your Email" >
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-</form> 
-<input type="hidden" name="form" value="contacts"> 
 
- <p> 
-   <a href="index.html">Back to Home</a>
-</p> 
+<!DOCTYPE html>
+<html lang="sv">
 
-<header class="Contact form">
-    <h1>Contact Us</h1>
-</header> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Johanna Andersson</title>
+    <meta name="description" content="Kontakta Johanna Andersson via kontaktformuläret.">
 
-<h2>leave a message </h2>
-<body> 
-    <h3> Email</h3>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
 
-    <h4> Your name</h4>
+<body>
+
+    <header class="header">
+        <a class="header__logo" href="index.html">JA.</a>
+
+        <nav class="header__nav" aria-label="Main menu">
+            <a href="index.html">Home page</a>
+            <a href="om-mig.html">About me</a>
+            <a href="kompetenser.html">Competencies</a>
+            <a href="projekt.html">My projects</a>
+            <a href="utbildning.html">Education & Experience</a>
+            <a href="karriarmal.html">Career</a>
+            <a href="kontakt.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1 class="contact__title">Contact Us</h1>
+            <p class="contact__description">
+                Feel free to send me a message.
+            </p>
+
+            <form class="contact__form" action="tack.php" method="post">
+
+                <div class="contact__field">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Your name" required>
+                </div>
+
+                <div class="contact__field">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Your email" required>
+                </div>
+
+                <div class="contact__field">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="question">Question</option>
+                        <option value="work">Work opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="contact__field">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message"
+                              placeholder="Write your message"
+                              required></textarea>
+                </div>
+
+                <button class="contact__button" type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Johanna Andersson</p>
+        <p>© 2026 / Portfolio</p>
+    </footer>
+
+</body>
+</html>
