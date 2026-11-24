@@ -743,20 +743,6 @@ a {
 
 @media (min-width: 901px) {
     .home-hero__title {
-<<<<<<< HEAD
-        transform: translateX(100px);
-    }
-}
-.contact-page .contact_form {}
-     max-width: 600px;
-     margin: 0 auto;
-
- contact-page .contact_form label {
-     display: block;
-     margin-bottom: 10px;
-     z-index: 2;
- }
-=======
         transform: none;
         font-size: clamp(42px, 7vw, 120px);
         letter-spacing: -4px;
@@ -1039,4 +1025,3 @@ body:has(main .timeline-item)
         padding: 35px 6%;
     }
 }
->>>>>>> eb46f6e987f795ff3ffaeabb0e047c306199e85a
