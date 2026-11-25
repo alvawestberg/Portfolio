@@ -33,7 +33,7 @@ $message = $_POST["message"] ?? "";
     </header>
 
     <main class="contact">
-        <h1 class="contact__title">Thank you!</h1>
+        <h1 class="contact__title" data-js-target="thank-you-message">Thank you!</h1>
 
         <p>Hello <?php echo htmlspecialchars($name); ?>!</p>
 
