@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-/* MENY */
+/* /* Meny, logotyp och navigeringslänkar */ */
 
 .header {
     display: flex;
@@ -47,15 +47,15 @@ a {
     letter-spacing: 1px;
     text-decoration: none;
 }
-
+	/* Meny – färg vid hover och den aktiva sidan */
 .header__nav a:hover,
 .header__nav a:focus-visible,
 .header__nav a[aria-current="page"] {
     color: #5B0D1E;
     text-decoration: none;
 }
+	/* Introduktion, stor rubrik och bakgrund */
 
-/* STOR RUBRIK */
 
 .intro {
     padding: 105px 8% 100px;
@@ -87,7 +87,7 @@ a {
     max-width: 420px;
 }
 
-/* PROJEKTSEKTIONER */
+/* Projekt, sektioner och bakgrunder */
 
 .projects {
     padding: 90px 8%;
@@ -116,14 +116,14 @@ a {
     margin: 18px 0 0;
 }
 
-/* PROJEKTKORT */
+/* Projekt, rutnät och projektkort */
 
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 45px;
 }
-
+/* Projekt, bilder */
 .project-card__image {
     display: block;
     width: 100%;
@@ -138,7 +138,7 @@ a {
     height: 100%;
     object-fit: cover;
 }
-
+	/* Projekt, nummer, rubriker och beskrivningar */
 .project-card__number {
     margin-top: 25px;
     color: #5B0D1E;
@@ -160,7 +160,7 @@ a {
     color: #55504D;
 }
 
-/* SIDFOT */
+/* Footer */
 
 .footer {
     display: flex;
@@ -172,7 +172,7 @@ a {
     font-size: 12px;
 }
 
-/* MOBILANPASSNING */
+/* Mobilanpassning */
 
 @media (max-width: 700px) {
 
@@ -218,7 +218,7 @@ a {
     }
 }
 
-/* OM MIG */
+/* Om mig, sidans layout och text */
 
 .about {
     padding: 90px 8%;
@@ -256,7 +256,7 @@ a {
     font-size: 15px;
     line-height: 1.8;
 }
-
+/* Om mig, profilbild */
 .about__image {
     display: block;
     width: 100%;
@@ -268,7 +268,7 @@ a {
     background-color: #D8CEC5;
 }
 
-/* OM MIG PÅ MOBIL */
+/* Om mig, mobilanpassning */
 
 @media (max-width: 700px) {
 
@@ -286,9 +286,9 @@ a {
     }
 }
 
-/* ===== CAREER GOALS ===== */
 
-/* INTRODUCTION */
+
+/* Karriär, introduktion */
 
 .career-intro {
     background-color: #5B0D1E;
@@ -316,7 +316,7 @@ a {
     line-height: 1.8;
 }
 
-/* MY VISION */
+/* Karriär, framtidsvision och bild */
 
 .career-vision {
     background-color: #F8F5F0;
@@ -353,7 +353,7 @@ a {
     color: #55504D;
 }
 
-/* SMALLER IMAGE */
+/* mindre bild */
 
 .career-vision__image {
     display: block;
@@ -364,7 +364,7 @@ a {
     flex-shrink: 0;
 }
 
-/* FUTURE AMBITIONS */
+/* Karriär, framtida mål */
 
 .career-goals {
     background-color: #EFE9E2;
@@ -385,7 +385,7 @@ a {
     margin: 20px 0 50px;
 }
 
-/* NUMBERED GOALS */
+	/* Karriär, numrerade mål */
 
 .career-goal {
     display: grid;
@@ -420,7 +420,7 @@ a {
     grid-column: 2;
 }
 
-/* MOBILE */
+/* Karriär, mobilanpassning */
 
 @media (max-width: 700px) {
 
@@ -452,7 +452,7 @@ a {
     }
 }
 
-/* KOMPETENSER */
+	/* Kompetenser, sidans utseende */
 
 .competencies-page .skills__intro {
     max-width: 560px;
@@ -462,6 +462,7 @@ a {
 .competencies-page .project-card__title {
     margin-top: 0;
 }
+/* Kompetenser, mobilanpassning */
 
 @media (max-width: 700px) {
 
@@ -471,7 +472,7 @@ a {
     }
 }
 
-/* ===== HOME PAGE ===== */
+/* Startsida, bild och presentation */
 
 .home-hero__content {
     position: relative;
@@ -485,7 +486,7 @@ a {
     object-fit: cover;
 }
 
-/* TEXT CONTENT */
+/* Startsida, rubrik och namn */
 
 .home-hero__title {
     font-family: Georgia, serif;
@@ -498,7 +499,7 @@ a {
     white-space: nowrap;
 }
 
-/* JOHANNA ANDERSSON */
+
 
 .home-hero__name {
     width: 43%;
@@ -515,7 +516,7 @@ a {
     margin: 0;
 }
 
-/* DESCRIPTION */
+/* Startsida, beskrivningstext */
 
 .home-hero__description {
     max-width: 480px;
@@ -527,7 +528,7 @@ a {
     margin: 35px 0 65px;
 }
 
-/* BUTTONS */
+/* Startsida, navigeringsknappar */
 
 .home-hero__buttons {
     display: flex;
@@ -558,7 +559,7 @@ a {
     outline-offset: 4px;
 }
 
-/* MOBILE STARTSIDA */
+/* Startsida, mobilanpassning */
 
 @media (max-width: 900px) {
 
@@ -605,7 +606,7 @@ a {
     }
 }
 
-/* DESKTOP STARTSIDA */
+/* Startsida, datoranpassning */
 
 @media (min-width: 901px) {
 
@@ -668,7 +669,7 @@ a {
     }
 }
 
-/* KONTAKT */
+/* Kontakt, formulärets layout */
 
 .contact-page .contact_form {
     max-width: 600px;
@@ -681,9 +682,7 @@ a {
     z-index: 2;
 }
 
-/* ===== UTBILDNING ===== */
-
-/* Utbildningens namn under det vinröda fältet */
+	/* Utbildning, rubrik och årtal */
 
 body:has(main .timeline-item) main > section:first-child > h3 {
     grid-column: 1;
@@ -699,7 +698,7 @@ body:has(main .timeline-item) main > section:first-child > h3 {
     line-height: 1.2;
 }
 
-/* VINRÖTT STRECK FÖRE UTBILDNINGSRUBRIKEN */
+
 
 body:has(main .timeline-item) main > section:first-child > h3::before {
     content: "";
@@ -710,7 +709,7 @@ body:has(main .timeline-item) main > section:first-child > h3::before {
     background-color: #5B0D1E;
 }
 
-/* Utbildningens årtal */
+
 
 body:has(main .timeline-item) main > section:first-child > time {
     grid-column: 1;
@@ -731,7 +730,7 @@ body:has(main .timeline-item) .timeline-item:empty {
     display: none;
 }
 
-/* EXPERIENCE */
+/* Erfarenhet, layout och innehåll */
 
 body:has(main .timeline-item) main > section:nth-child(2) {
     display: grid;
@@ -758,7 +757,7 @@ body:has(main .timeline-item) main > section:nth-child(2) > h2 {
     line-height: 1.2;
 }
 
-/* Varje erfarenhet */
+
 
 body:has(main .timeline-item) main > section:nth-child(2) > article {
     min-width: 0;
@@ -766,7 +765,6 @@ body:has(main .timeline-item) main > section:nth-child(2) > article {
     padding: 0;
 }
 
-/* Jobbtitlar */
 
 body:has(main .timeline-item) .timeline-item h3 {
     margin: 0 0 20px;
@@ -780,7 +778,7 @@ body:has(main .timeline-item) .timeline-item h3 {
     line-height: 1.2;
 }
 
-/* ÅRTAL */
+	/* Erfarenhet, årtal och beskrivningar */
 
 body:has(main .timeline-item) .timeline-item time {
     display: block;
@@ -806,7 +804,7 @@ body:has(main .timeline-item) .timeline-item p {
     line-height: 1.8;
 }
 
-/* SIDFOT UTBILDNING */
+/* Utbildning, sidfot */
 
 body:has(main .timeline-item) > footer {
     display: flex;
@@ -824,7 +822,7 @@ body:has(main .timeline-item) > footer p {
     margin: 0;
 }
 
-/* MENY UTAN UNDERSTRYKNING */
+/* Meny, tar bort understrykning */
 
 .header__nav a,
 .header__nav a:hover,
@@ -834,7 +832,7 @@ body:has(main .timeline-item) > footer p {
     text-decoration: none;
 }
 
-/* MOBILANPASSNING UTBILDNING */
+/* Utbildning, mobilanpassning */
 
 @media (max-width: 700px) {
 
@@ -878,14 +876,14 @@ body:has(main .timeline-item) > footer p {
         padding: 35px 6%;
     }
 }
-/* FIXA UTBILDNINGENS MITTSEKTION */
+	/* Utbildning, huvudinnehåll */
 
 .education-content {
     padding: 90px 8%;
     background-color: #F8F5F0;
 }
 
-/* JOHANNA ANDERSSON */
+
 
 .education-content > h2 {
     font-family: Georgia, serif;
@@ -929,7 +927,7 @@ body:has(main .timeline-item) > footer p {
     margin: 0;
 }
 
-/* MOBIL */
+/* Utbildning, mobilanpassning av innehållet */
 
 @media (max-width: 700px) {
     .education-content {
